@@ -1,7 +1,7 @@
 {
-  "name": "helloworld",
+  "name": "demo-graphql",
   "version": "1.0.0",
-  "description": "hello world in GraphQL",
+  "description": "GraphQL demo",
   "main": "build/server.js",
   "scripts": {
     "start": "node build/server.js",
@@ -10,15 +10,15 @@
     "build:dev": "nodemon './src/server.ts' --exec 'ts-node' ./src/server.ts -e ts,graphql"
   },
   "keywords": [
-    "graphql"
+    "graphql, "
   ],
   "author": "https://hectorlemus.github.io",
   "license": "MIT",
   "dependencies": {
+    "apollo-server-express": "^2.11.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
     "graphql": "^14.6.0",
     "graphql-import-node": "0.0.4",
     "graphql-playground-middleware-express": "^1.7.12",
